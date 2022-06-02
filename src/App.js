@@ -4,7 +4,7 @@ function App() {
   const  [amount,setAmount] = useState()
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(amount === null || amount === "", amount === 0, amount === undefined){
+    if(amount === null || amount === "" || amount === 0 || amount === undefined){
       alert("Amount cant be empty.")
     }else(
       alert(amount)
